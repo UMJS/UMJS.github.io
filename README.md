@@ -1,11 +1,57 @@
-#Eu sou ‍Ubaldo Meireles 🧔🏿, Esse repositório é dedicado ao meu portfólio para AVALIAÇÃO DE WEBDESIGN.
+# 💼 Portfólio de Ubaldo Meireles
 
-## 💻 Estou estudando atualmente;
+[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)](https://github.com/umjs/umjs.github.io)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-brightgreen)](https://umjs.github.io)
+[![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
 
-![angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white)![Docker](https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white)![CSS3](https://img.shields.io/badge/-CSS3-549FDE?style=flat-square&logo=css3&logoColor=white)![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)![MySQL](https://img.shields.io/badge/-MySQL-00758F?style=flat-square&logo=mysql&logoColor=white)![Nodejs](https://img.shields.io/badge/-Node.js-43853d?style=flat-square&logo=Node.js&logoColor=white)![npm](https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white)![Prettier](https://img.shields.io/badge/-Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=white)![php 7.4 Badge](https://img.shields.io/badge/-7.4-000?style=flat&color=grey&logo=Php&logoColor=white&label=Php&labelColor=black)![visual studio code 1.48.2 Badge](https://img.shields.io/badge/-1.48.2-000?style=flat&color=grey&logo=visual-studio-code&logoColor=white&label=visual_studio_code&labelColor=black)![Windows](https://img.shields.io/badge/-Windows-00ADEF?style=flat-square&logo=windows&logoColor=white)
+### 🧠 **Da Saúde à Tecnologia: Criando Soluções Digitais com Propósito**
 
-<img  align="left"  alt="Wordpress"  width="26px"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/wordpress/wordpress.png"/>
+Olá! Sou o Ubaldo, um desenvolvedor Full-Stack em formação com uma trajetória única de **8+ anos na área da saúde e administração**. Este portfólio representa minha transição de carreira e meu compromisso em desenvolver soluções tecnológicas que são não apenas funcionais, mas também **acessíveis e inclusivas**.
 
-## Para sugestões entre em contato;
+🔗 **Acesse o portfólio online:** [https://umjs.github.io](https://umjs.github.io)
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ubaldo-meireles-de-jesus-sousa-b8b62b32)](https://www.linkedin.com/in/ubaldo-meireles-de-jesus-sousa-b8b62b32)[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:contato.ubaldo3@gmail.com)](mailto:contato.ubaldo3@gmail.com)[![Instagram Badge](https://img.shields.io/badge/-ubaldo3-a43b9d?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/ubaldo3/)](https://www.instagram.com/ubaldo3/)[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fubaldo3)](https://twitter.com/ubaldo3)
+---
+
+## 🚀 Tecnologias & Ferramentas
+
+### Frontend & Design
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### Backend & Banco de Dados
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Ferramentas & Práticas
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Acessibilidade](https://img.shields.io/badge/Acessibilidade-WCAG_2.1-2C8EBB?style=for-the-badge)
+
+---
+
+## 🌟 Destaques & Projetos
+
+Meus projetos combinam técnica com impacto social, refletindo minha experiência anterior:
+
+- **[Site Institucional AAPBA](https://github.com/umjs/aapba-site)**: Desenvolvimento voluntário de site acessível para associação de atletas paralímpicos.
+- **[Sistema de Gestão para Clínicas](https://github.com/umjs/health-management-system)**: MVP inspirado em SUREM-BA para gestão de pacientes.
+- **[Ferramentas de Acessibilidade](https://github.com/umjs/accessibility-tools)**: Coleção de pequenas aplicações focadas em inclusão digital.
+
+> 💡 **Diferencial competitivo:** Experiência prática em saúde + conhecimento técnico + paixão por inclusão digital.
+
+---
+
+## 📞 Contato & Conecte-se
+
+- **📧 Email**: [ubaldo3@gmail.com](mailto:ubaldo3@gmail.com)
+- **💼 LinkedIn**: [Ubaldo Meireles](https://www.linkedin.com/in/ubaldo-meireles/)
+- **🐙 GitHub**: [umjs](https://github.com/umjs)
+- **🌐 Site**: [https://umjs.github.io](https://umjs.github.io)
+
+
+**⭐ Se este portfólio ou projetos foram úteis para você, deixe uma estrela no repositório!**

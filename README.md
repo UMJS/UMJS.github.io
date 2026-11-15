@@ -1,52 +1,32 @@
-# 💼 Portfólio de Ubaldo Meireles
+# Portfólio de Ubaldo Meireles
 
-[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-brightgreen)](https://umjs.github.io)
-[![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
+Sou desenvolvedor Full Stack em formação e estudante de Análise e Desenvolvimento de Sistemas (ADS). Minha experiência em saúde, terceiro setor e construção civil orienta os projetos que desenvolvo para simplificar rotinas, organizar dados e tornar sistemas mais acessíveis.
 
-### 🧠 **Da Saúde à Tecnologia: Criando Soluções Digitais com Propósito**
+[Visitar o portfólio](https://umjs.github.io/)
 
-Olá! Sou o Ubaldo, um desenvolvedor Full-Stack em formação com uma trajetória única de **8+ anos na área da saúde e administração**. Este portfólio representa minha transição de carreira e meu compromisso em desenvolver soluções tecnológicas que são não apenas funcionais, mas também **acessíveis e inclusivas**.
+## Projetos em destaque
 
-🔗 **Acesse o portfólio online:** [https://umjs.github.io](https://umjs.github.io)
+1. **MetroStock** — Aplicação web progressiva para controle de materiais em canteiros de obras. Permite acompanhar saldos, registrar movimentações e consultar relatórios, com operação offline e sincronização ao recuperar a conexão. Desenvolvido com React, Vite e Firebase como projeto de extensão. O código do MetroStock permanece local. A página apresenta capturas de [Estoque](assets/images/metrostock/estoque.jpg), [Novo Material](assets/images/metrostock/novo-material.jpg) e [Relatórios](assets/images/metrostock/relatorios.jpg).
+2. **[Ponto Smart](https://github.com/UMJS/Ponto-Smart)** — Sistema de registro digital de jornada com modo quiosque, painel administrativo e relatórios em PDF. Usa Python, Streamlit, Supabase e FPDF2.
+3. **[Análise de Dados Esportivos](https://github.com/UMJS/analise-risco-esportes)** — Projeto em Python que coleta dados da Série A do Brasileirão e apresenta os cinco primeiros times da classificação. Usa Requests e Beautiful Soup.
 
----
+## Sobre o site
 
-## 🚀 Tecnologias & Ferramentas
+O portfólio é um site estático desenvolvido com HTML semântico, CSS e JavaScript. A página tem layout responsivo, temas claro e escuro, menu para celular e descrições alternativas para as capturas de tela.
 
-### Frontend & Design
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+Para abrir a versão local, abra o arquivo [index.html](index.html) no navegador. O site dispensa instalação de dependências.
 
-### Backend & Banco de Dados
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+## Formação e tecnologias
 
-### Ferramentas & Práticas
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Acessibilidade](https://img.shields.io/badge/Acessibilidade-WCAG_2.1-2C8EBB?style=for-the-badge)
+Meu foco de estudo inclui Java e Spring Boot, desenvolvimento front-end com HTML, CSS e JavaScript, Python, SQL e IA generativa.
 
----
+## Contato
 
-## 🌟 Destaques & Projetos
+- [LinkedIn](https://linkedin.com/in/umjs)
+- [GitHub](https://github.com/UMJS)
+- [E-mail](mailto:ubaldo3@gmail.com)
+- [WhatsApp](https://wa.me/5571988337790)
 
-1. **MetroStock** — Aplicação web progressiva para controle de materiais em canteiros de obras, com operação offline e sincronização ao recuperar a conexão. Código mantido localmente. [Ver no GitHub (UMJS)](https://github.com/UMJS/UMJS)
-2. **[Ponto Smart](https://github.com/UMJS/Ponto-Smart)** — Sistema digital de registro de jornada com modo quiosque, painel administrativo e relatórios em PDF.
-3. **[Análise de Dados Esportivos](https://github.com/UMJS/analise-risco-esportes)** — Projeto em Python que coleta a classificação do Brasileirão Série A e mostra os cinco primeiros times.
+## Licença
 
----
-
-## 📞 Contato & Conecte-se
-
-- **📧 Email**: [ubaldo3@gmail.com](mailto:ubaldo3@gmail.com)
-- **💼 LinkedIn**: [Ubaldo Meireles](https://www.linkedin.com/in/ubaldo-meireles/)
-- **🐙 GitHub**: [umjs](https://github.com/umjs)
-- **🌐 Site**: [https://umjs.github.io](https://umjs.github.io)
-
-
-**⭐ Se este portfólio ou projetos foram úteis para você, deixe uma estrela no repositório!**
+O código deste portfólio está sob a [licença MIT](LICENSE).

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umjs.github.io/sitemap.xml

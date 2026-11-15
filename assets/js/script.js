@@ -46,11 +46,52 @@
       if (e.target.closest('a')) setMenu(false);
     });
 
+    navBtn.closest('nav').addEventListener('focusout', function (e) {
+      if (navBtn.contains(e.relatedTarget) || menu.contains(e.relatedTarget)) return;
+      if (navBtn.getAttribute('aria-expanded') === 'true') setMenu(false);
+    });
+
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && navBtn.getAttribute('aria-expanded') === 'true') {
         setMenu(false);
         navBtn.focus();
       }
+    });
+  }
+
+  /* ---------- Visualizador das capturas ---------- */
+  var viewer = document.querySelector('.gallery-dialog');
+  if (viewer && typeof viewer.showModal === 'function') {
+    var viewerImage = viewer.querySelector('img');
+    var caption = viewer.querySelector('figcaption');
+    var opener;
+
+    document.querySelectorAll('.project-gallery a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+        var image = link.querySelector('img');
+        viewerImage.src = image.currentSrc || link.href;
+        viewerImage.alt = image.alt;
+        caption.textContent = link.closest('figure').querySelector('figcaption').textContent;
+        viewer.showModal();
+        opener = link;
+        e.preventDefault();
+      });
+    });
+
+    viewer.querySelector('button').addEventListener('click', function () {
+      viewer.close();
+    });
+
+    viewer.addEventListener('click', function (e) {
+      if (e.target !== viewer) return;
+      var bounds = viewer.getBoundingClientRect();
+      if (e.clientX < bounds.left || e.clientX > bounds.right ||
+          e.clientY < bounds.top || e.clientY > bounds.bottom) viewer.close();
+    });
+
+    viewer.addEventListener('close', function () {
+      if (opener) opener.focus();
     });
   }
 

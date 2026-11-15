@@ -33,7 +33,7 @@
   --accent-primary: #D97706;   /* Âmbar escuro para contraste em botão */
   --accent-secondary: #0369A1;
   --accent-text: #B45309;      /* Contraste > 4.5:1 sobre branco */
-  --on-accent: #FFFFFF;
+  --on-accent: #090D16;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -420,6 +420,36 @@ a { color: var(--accent-secondary); }
 .project-gallery figcaption {
   margin-top: 8px;
   color: var(--text-secondary);
+}
+
+body:has(.gallery-dialog[open]) { overflow: hidden; }
+
+.gallery-dialog {
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  padding: 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.gallery-dialog::backdrop { background: var(--bg-primary); opacity: .85; }
+
+.gallery-dialog figure {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin: 0;
+}
+
+.gallery-dialog img {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: auto;
+  max-height: calc(100dvh - 110px);
+  object-fit: contain;
 }
 
 /* Bloco Lateral ADR (Decisão de Engenharia) */

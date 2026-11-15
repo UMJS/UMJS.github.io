@@ -10,6 +10,13 @@ Sou desenvolvedor Full Stack em formação e estudante de Análise e Desenvolvim
 2. **[Ponto Smart](https://github.com/UMJS/Ponto-Smart)** — Sistema de registro digital de jornada com modo quiosque, painel administrativo e relatórios em PDF. Usa Python, Streamlit, Supabase e FPDF2.
 3. **[Análise de Dados Esportivos](https://github.com/UMJS/analise-risco-esportes)** — Projeto em Python que coleta dados da Série A do Brasileirão e apresenta os cinco primeiros times da classificação. Usa Requests e Beautiful Soup.
 
+## IA aplicada
+
+- **AAPBA** — Uso IA generativa para apoiar a elaboração de ofícios e propostas de projetos da Associação de Atletas Paralímpicos da Bahia.
+- **Hermes** — Experimento com o agente instalado localmente e o Qwen3-Coder 30B executado via Ollama no Kaggle. O notebook inclui um teste de solicitação de ferramenta pelo modelo. A integração com os dados do MetroStock está em planejamento.
+
+[Ver os exemplos no portfólio](https://umjs.github.io/#ia-aplicada)
+
 ## Sobre o site
 
 O portfólio é um site estático desenvolvido com HTML semântico, CSS e JavaScript. A página tem layout responsivo, temas claro e escuro, menu para celular e descrições alternativas para as capturas de tela.

@@ -1,84 +1,301 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubaldo Meireles - Desenvolvedor de Software</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubaldo Meireles | Portfólio de Full Stack Developer em formação| Java &amp; Spring Boot • Front-End (HTML/CSS/JS) • Python • SQL | ADS | IA Generativa</title>
+  <meta name="description" content="Desenvolvedor Web Full Stack &amp; IA em formação. Mais de 10 anos de experiência operacional traduzindo gargalos reais da saúde, terceiro setor e construção civil em software acessível.">
+  <meta name="theme-color" content="#0B1120">
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:title" content="Ubaldo Meireles — Tradutor de Processos &amp; Desenvolvedor Web">
+  <meta property="og:description" content="Da operação real ao código: liderança comunitária (AAPBA), visão de processos e engenharia de software inclusiva.">
+  <meta property="og:url" content="https://umjs.github.io">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script>
+    try {
+      var t = localStorage.getItem('umjs-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <a href="index.html" class="logo">UMJS</a>
-        <nav class="main-nav">
-            <a href="index.html" class="active">Início</a>
-            <a href="works.html">Projetos</a>
-            <a href="resume.html">Currículo</a>
-            <a href="contact.html">Contato</a>
-        </nav>
-        <!-- Botão menu mobile -->
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ubaldo Meireles — Início">
+        <img class="brand-avatar" src="https://avatars.githubusercontent.com/u/67008429?v=4&amp;s=144" alt="" width="48" height="48">
+        <span>UBALDO MEIRELES<span class="brand-dot" aria-hidden="true">.</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="menu">
+        <ul class="nav-links">
+          <li><a href="#pilares">Competências</a></li>
+          <li><a href="#projetos">Estudos de Caso</a></li>
+          <li><a href="#trajetoria">Trajetória</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Alternar para o tema claro">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
         </div>
-    </header>
+      </div>
+      <a class="btn btn-whatsapp btn-compact nav-whatsapp" href="https://wa.me/5571988337790" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
 
-    <!-- Conteúdo principal -->
-    <main>
-        <!-- Seção Hero -->
-        <section class="hero">
-            <div class="container">
-                <h1>Ubaldo Meireles</h1>
-                <p class="subtitle">
-                    Transformando processos e ideias em soluções digitais eficientes. 
-                    Com uma base sólida em infraestrutura de TI, hoje construo aplicações web com Python e JavaScript para resolver problemas reais.
-                </p>
-                <a href="works.html" class="btn">Veja Meus Projetos</a>
+  <main id="conteudo">
+    <!-- HERO: POSICIONAMENTO E MATURIDADE -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge"><span class="badge-dot" aria-hidden="true"></span>Desenvolvimento Web, Dados &amp; IA Aplicada</p>
+          <h1 id="hero-title">Ubaldo Meireles: Tradutor de Processos &amp; Desenvolvedor</h1>
+          <p class="hero-sub">Antes de escrever código, aprendi a ler operações críticas na saúde, no terceiro setor e na construção civil. Hoje transformo gargalos humanos e administrativos em sistemas web acessíveis e automações inteligentes.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projetos">Explorar estudos de caso</a>
+            <a class="btn btn-secondary" href="https://github.com/UMJS" target="_blank" rel="noopener">GitHub (@UMJS)</a>
+          </div>
+        </div>
+
+        <figure class="translate" aria-label="Metodologia de trabalho: da escuta operacional à arquitetura de software">
+          <div class="translate-row">
+            <span class="translate-tag">01. Escuta &amp; Diagnóstico</span>
+            <p>Identifico onde o processo trava na ponta: seja uma planilha hospitalar, uma barreira de acessibilidade ou um canteiro sem internet.</p>
+          </div>
+          <div class="translate-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 36" width="24" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v28M5 23l7 8 7-8"/></svg>
+          </div>
+          <div class="translate-row translate-out">
+            <span class="translate-tag">02. Decisão &amp; Entrega</span>
+            <p>Projeto a solução mais enxuta, inclusiva e resiliente para quem realmente vai operar o sistema no dia a dia.</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PILARES COMPORTAMENTAIS (SOFT SKILLS COMPROVADAS) -->
+    <section class="section" id="pilares" aria-labelledby="pilares-title">
+      <div class="container">
+        <h2 id="pilares-title">O que trago antes do código</h2>
+        <p class="section-lead">Tecnologias mudam rápido; capacidade de entender pessoas, gerir conflitos e estruturar processos é o que sustenta um bom produto.</p>
+
+        <div class="pillars-grid">
+          <article class="card">
+            <p class="card-kicker">Empatia &amp; Inclusão</p>
+            <h3>Liderança Comunitária</h3>
+            <p>Como cofundador e tesoureiro da Associação de Atletas Paralímpicos da Bahia (AAPBA), aprendi na prática que acessibilidade não é detalhe estético: é direito de acesso e dignidade.</p>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Rigor &amp; Comunicação</p>
+            <h3>Visão de Processos Críticos</h3>
+            <p>Atuando na regulação e faturamento hospitalar (Ellu / COF), desenvolvi precisão analítica, inteligência emocional sob pressão e facilidade para traduzir regras complexas entre equipes.</p>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Adaptabilidade &amp; Foco</p>
+            <h3>Engenharia Pragmática</h3>
+            <p>A rotina na construção civil em Cabaceiras do Paraguaçu me ensinou a construir ferramentas que funcionam no mundo real — com restrição de rede, tela pequena e zero curva de aprendizado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDOS DE CASO (PROJETOS DE OURO) -->
+    <section class="section" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <h2 id="projetos-title">Estudos de caso</h2>
+        <p class="section-lead">Projetos de controle de estoque, registro de jornada e análise de dados esportivos.</p>
+
+        <article class="project">
+          <div class="project-body">
+            <p class="project-kicker">Construção civil e operação offline</p>
+            <h3>MetroStock — Controle de Materiais de Obra</h3>
+            <dl class="project-story">
+              <div>
+                <dt>Contexto</dt>
+                <dd>O controle de materiais em canteiros precisa funcionar mesmo com conexão instável.</dd>
+              </div>
+              <div>
+                <dt>Solução</dt>
+                <dd>Desenvolvi uma aplicação web progressiva para consultar saldos, registrar entradas, saídas e remanejamentos e sincronizar os registros quando a conexão retorna.</dd>
+              </div>
+            </dl>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>React</li><li>Vite</li><li>Firebase</li><li>PWA</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-secondary btn-compact" href="https://github.com/UMJS/UMJS" target="_blank" rel="noopener" aria-label="Ver no GitHub — repositório UMJS">Ver no GitHub</a>
             </div>
-        </section>
+          </div>
 
-        <!-- Seção sobre -->
-        <section class="section">
-            <div class="container">
-                <h2>Minha Jornada: Do Suporte à Solução</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto;">
-                    Minha carreira começou no Suporte de TI, onde aprendi a ouvir e a resolver os problemas dos usuários. 
-                    Essa experiência me deu uma visão única sobre as dores reais das pessoas e me motivou a dar o próximo passo: 
-                    aprender a construir as ferramentas que resolvem esses problemas na raiz. 
-                    Hoje, como estudante de Análise e Desenvolvimento de Sistemas, meu foco é usar a tecnologia para criar soluções práticas e eficientes.
-                </p>
+          <aside class="project-adr" aria-label="Resumo técnico — MetroStock — Controle de Materiais de Obra">
+            <span class="adr-label">Destaque técnico</span>
+            <p class="adr-quote">Controle de estoque em campo</p>
+            <p class="adr-metrics">Alertas de estoque mínimo e exportação de relatórios em PDF e Excel.</p>
+          </aside>
+
+          <div class="project-gallery">
+            <figure>
+              <a href="assets/images/metrostock/estoque.jpg" aria-label="Ampliar captura de estoque">
+                <img src="assets/images/metrostock/estoque.jpg" alt="Lista de materiais com saldos, alertas de estoque e botões de entrada e saída" width="691" height="1536" loading="lazy">
+              </a>
+              <figcaption>Estoque</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/images/metrostock/novo-material.jpg" aria-label="Ampliar captura de novo material">
+                <img src="assets/images/metrostock/novo-material.jpg" alt="Formulário de cadastro com unidade, estoque mínimo e opções de importação" width="691" height="1536" loading="lazy">
+              </a>
+              <figcaption>Novo material</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/images/metrostock/relatorios.jpg" aria-label="Ampliar captura de relatórios">
+                <img src="assets/images/metrostock/relatorios.jpg" alt="Central de relatórios com filtros e botões de exportação em PDF e Excel" width="691" height="1536" loading="lazy">
+              </a>
+              <figcaption>Relatórios</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+            <p class="project-kicker">Registro de ponto e gestão de equipes</p>
+            <h3>Ponto Smart — Controle de Jornada</h3>
+            <dl class="project-story">
+              <div>
+                <dt>Contexto</dt>
+                <dd>Pequenos negócios precisam registrar jornadas e conferir ajustes de ponto.</dd>
+              </div>
+              <div>
+                <dt>Solução</dt>
+                <dd>Desenvolvi um sistema com modo quiosque para registro de ponto, painel administrativo e geração de relatórios em PDF.</dd>
+              </div>
+            </dl>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Python</li><li>Streamlit</li><li>Supabase</li><li>FPDF2</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-secondary btn-compact" href="https://github.com/UMJS/Ponto-Smart" target="_blank" rel="noopener" aria-label="Ver no GitHub — Ponto Smart — Controle de Jornada">Ver no GitHub</a>
             </div>
-        </section>
+          </div>
 
-        <!-- Projeto em destaque -->
-        <section class="section" style="background-color: var(--cor-fundo-card);">
-            <div class="container">
-                <h2>Projeto em Destaque</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <img src="https://placehold.co/600x400/0a0a23/4f8afc?text=Site+da+AAPBA" alt="Imagem do site da AAPBA">
-                        <div class="project-card-content">
-                            <h3>Site Institucional da AAPBA</h3>
-                            <p>Projeto voluntário de desenvolvimento de um site para a ONG AAPBA, com foco em impacto social, usabilidade e design responsivo.</p>
-                            <div class="project-links">
-                                <a href="works.html#aapba">Ver Detalhes</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer">Ver Código</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+          <aside class="project-adr" aria-label="Resumo técnico — Ponto Smart — Controle de Jornada">
+            <span class="adr-label">Destaque técnico</span>
+            <p class="adr-quote">Rastreabilidade dos registros</p>
+            <p class="adr-metrics">Autenticação por PIN e trilha de auditoria para correções e alterações.</p>
+          </aside>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+            <p class="project-kicker">Coleta e análise de dados</p>
+            <h3>Análise de Dados Esportivos — Brasileirão</h3>
+            <dl class="project-story">
+              <div>
+                <dt>Contexto</dt>
+                <dd>Criei uma demonstração técnica para uma vaga de gerenciamento de risco, usando dados do Brasileirão Série A.</dd>
+              </div>
+              <div>
+                <dt>Solução</dt>
+                <dd>Usei Python para coletar a classificação do campeonato e exibir os cinco primeiros times.</dd>
+              </div>
+            </dl>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Python</li><li>Requests</li><li>BeautifulSoup4</li><li>lxml</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-secondary btn-compact" href="https://github.com/UMJS/analise-risco-esportes" target="_blank" rel="noopener" aria-label="Ver no GitHub — Análise de Dados Esportivos — Brasileirão">Ver no GitHub</a>
             </div>
-        </section>
-    </main>
+          </div>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2025 Ubaldo Meireles. Todos os direitos reservados.</p>
-    </footer>
+          <aside class="project-adr" aria-label="Resumo técnico — Análise de Dados Esportivos — Brasileirão">
+            <span class="adr-label">Destaque técnico</span>
+            <p class="adr-quote">Classificação do Brasileirão</p>
+            <p class="adr-metrics">Coleta via web scraping e tratamento de erros de conexão.</p>
+          </aside>
+        </article>
+      </div>
+    </section>
 
-    <!-- Script do menu mobile -->
-    <script src="assets/js/script.js"></script>
+    <!-- TRAJETÓRIA E STACK -->
+    <section class="section" id="trajetoria" aria-labelledby="trajetoria-title">
+      <div class="container">
+        <h2 id="trajetoria-title">Trajetória e ferramentas</h2>
+        <p class="section-lead">Uma transição de carreira construída sobre fundamentos sólidos, disciplina e aprendizado contínuo.</p>
+
+        <div class="trajetoria-grid">
+          <div>
+            <h3 class="col-title">Linha do tempo: da operação à engenharia</h3>
+            <ol class="timeline">
+              <li>
+                <h4>Base em Suporte e Infraestrutura (2010–2015)</h4>
+                <p>Empreendi com a Meireles Soluções e Informática, desenvolvendo atendimento direto ao cliente, diagnóstico de problemas e resolução prática.</p>
+              </li>
+              <li>
+                <h4>Saúde, Regulação e Faturamento (2017–2025)</h4>
+                <p>Atuação no Centro Médico COF e na Ellu Terceirização Eireli (sistemas SUS, BPA, SUREM, SysLife), dominando fluxos auditáveis e comunicação intersetorial.</p>
+              </li>
+              <li>
+                <h4>Terceiro Setor e Impacto Social (2016–Atual)</h4>
+                <p>Cofundador e tesoureiro da AAPBA e articulador tecnológico do projeto comunitário "Abaeté de Todos Nós".</p>
+              </li>
+              <li>
+                <h4>Graduação em ADS &amp; Imersão em Java / IA (Atual)</h4>
+                <p>Graduando em Análise e Desenvolvimento de Sistemas (UniAmérica Descomplica), com formação complementar pelo IFTO e bootcamps intensivos em Java, Back-end e IA Generativa.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="col-title">Ferramentas que utilizo para resolver problemas</h3>
+            <div class="stack-group">
+              <h4>Front-end &amp; Experiência Inclusiva</h4>
+              <ul class="tags"><li>HTML5 Semântico</li><li>CSS3 (Mobile-First)</li><li>JavaScript</li><li>React</li><li>Acessibilidade WCAG</li></ul>
+            </div>
+            <div class="stack-group">
+              <h4>Back-end, Dados &amp; Nuvem</h4>
+              <ul class="tags"><li>Java</li><li>Python</li><li>PHP</li><li>SQL</li><li>Firebase</li><li>Supabase</li></ul>
+            </div>
+            <div class="stack-group">
+              <h4>IA Aplicada &amp; Engenharia de Fluxo</h4>
+              <ul class="tags"><li>Engenharia de Prompt</li><li>APIs Generativas (Gemini / Whisper)</li><li>Agentes LLM</li><li>Git &amp; GitHub</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTATO / RODAPÉ -->
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <h2>Vamos conversar?</h2>
+      <p class="section-lead">Busco oportunidades de Estágio em Desenvolvimento, Dados ou Inteligência Artificial onde minha maturidade operacional e visão centrada no usuário possam somar ao time.</p>
+
+      <ul class="contact-list">
+        <li><a class="btn btn-linkedin" href="https://linkedin.com/in/umjs" target="_blank" rel="noopener" aria-label="LinkedIn de Ubaldo Meireles">LinkedIn</a></li>
+        <li><a class="btn btn-github" href="https://github.com/UMJS" target="_blank" rel="noopener" aria-label="GitHub de Ubaldo Meireles">GitHub</a></li>
+        <li><a class="btn btn-email" href="mailto:ubaldo3@gmail.com" aria-label="Enviar e-mail para Ubaldo Meireles">E-mail</a></li>
+        <li><a class="btn btn-whatsapp" href="https://wa.me/5571988337790" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">WhatsApp</a></li>
+      </ul>
+
+      <p class="footer-note">Sou Ubaldo Meireles e desenvolvi este portfólio para compartilhar meus projetos e minha trajetória na tecnologia.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

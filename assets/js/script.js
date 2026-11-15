@@ -1,56 +1,77 @@
-// ===============================
-// MENU HAMBÚRGUER RESPONSIVO
-// ===============================
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('.main-nav');
+(function () {
+  'use strict';
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    menuToggle.classList.toggle('active');
-});
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  var navBtn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('menu');
+  var meta = document.querySelector('meta[name="theme-color"]');
 
-// Fecha o menu ao clicar em um link (mobile)
-document.querySelectorAll('.main-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('show');
-        menuToggle.classList.remove('active');
+  /* ---------- Tema claro/escuro ---------- */
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#0B1120' : '#F8FAFC');
+    if (toggle) {
+      toggle.setAttribute(
+        'aria-label',
+        theme === 'dark' ? 'Alternar para o tema claro' : 'Alternar para o tema escuro'
+      );
+    }
+  }
+
+  applyTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try { localStorage.setItem('umjs-theme', next); } catch (e) {}
     });
-});
+  }
 
-// ===============================
-// ANIMAÇÃO SUAVE AO ROLAR A PÁGINA
-// ===============================
-const elements = document.querySelectorAll('.section, .hero, .project-card');
+  /* ---------- Menu mobile ---------- */
+  function setMenu(open) {
+    if (!navBtn || !menu) return;
+    navBtn.setAttribute('aria-expanded', String(open));
+    navBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    menu.classList.toggle('is-open', open);
+  }
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+  if (navBtn && menu) {
+    navBtn.addEventListener('click', function () {
+      setMenu(navBtn.getAttribute('aria-expanded') !== 'true');
     });
-}, { threshold: 0.1 });
 
-elements.forEach(el => observer.observe(el));
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setMenu(false);
+    });
 
-// ===============================
-// EFEITO DE DIGITAÇÃO (opcional para o assistente virtual)
-// ===============================
-function typeEffect(element, speed) {
-    const text = element.innerHTML;
-    element.innerHTML = "";
-    let i = 0;
-    const timer = setInterval(() => {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-        } else {
-            clearInterval(timer);
-        }
-    }, speed);
-}
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navBtn.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        navBtn.focus();
+      }
+    });
+  }
 
-// Ativa o efeito no chat da página de contato
-const chatMessage = document.querySelector('.ai-chatbox .chat-message p');
-if (chatMessage) {
-    typeEffect(chatMessage, 30);
-}
+  /* ---------- Link ativo conforme a seção visível ---------- */
+  var links = document.querySelectorAll('.nav-links a');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (a) { a.classList.remove('is-active'); a.removeAttribute('aria-current'); });
+        var active = map[entry.target.id];
+        if (active) { active.classList.add('is-active'); active.setAttribute('aria-current', 'true'); }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  }
+})();

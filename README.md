@@ -1,6 +1,5 @@
 # 💼 Portfólio de Ubaldo Meireles
 
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)](https://github.com/umjs/umjs.github.io)
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-brightgreen)](https://umjs.github.io)
 [![Licença](https://img.shields.io/badge/Licença-MIT-blue)](LICENSE)
 
@@ -36,13 +35,9 @@ Olá! Sou o Ubaldo, um desenvolvedor Full-Stack em formação com uma trajetóri
 
 ## 🌟 Destaques & Projetos
 
-Meus projetos combinam técnica com impacto social, refletindo minha experiência anterior:
-
-- **[Site Institucional AAPBA](https://github.com/umjs/aapba-site)**: Desenvolvimento voluntário de site acessível para associação de atletas paralímpicos.
-- **[Sistema de Gestão para Clínicas](https://github.com/umjs/health-management-system)**: MVP inspirado em SUREM-BA para gestão de pacientes.
-- **[Ferramentas de Acessibilidade](https://github.com/umjs/accessibility-tools)**: Coleção de pequenas aplicações focadas em inclusão digital.
-
-> 💡 **Diferencial competitivo:** Experiência prática em saúde + conhecimento técnico + paixão por inclusão digital.
+1. **MetroStock** — Aplicação web progressiva para controle de materiais em canteiros de obras, com operação offline e sincronização ao recuperar a conexão. Código mantido localmente. [Ver no GitHub (UMJS)](https://github.com/UMJS/UMJS)
+2. **[Ponto Smart](https://github.com/UMJS/Ponto-Smart)** — Sistema digital de registro de jornada com modo quiosque, painel administrativo e relatórios em PDF.
+3. **[Análise de Dados Esportivos](https://github.com/UMJS/analise-risco-esportes)** — Projeto em Python que coleta a classificação do Brasileirão Série A e mostra os cinco primeiros times.
 
 ---
 

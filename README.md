@@ -31,7 +31,7 @@ Meu foco de estudo inclui Java e Spring Boot, desenvolvimento front-end com HTML
 
 - [LinkedIn](https://linkedin.com/in/umjs)
 - [GitHub](https://github.com/UMJS)
-- [E-mail](mailto:ubaldo3@gmail.com)
+- [ubaldo3@gmail.com](mailto:ubaldo3@gmail.com)
 - [WhatsApp](https://wa.me/5571988337790)
 
 ## Licença
